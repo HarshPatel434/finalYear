@@ -92,10 +92,10 @@ export default function MyProfileHistoryPage() {
         cell: (info) => (
           <div className="flex flex-col items-start gap-[74px] py-[34px] md:gap-[55px] sm:gap-[37px] sm:py-5">
             <div className="flex justify-center">
-              <Text as="p" className="tracking-[0.14px] text-black-900">
+              <Text as="p" className="tracking-[0.14px] !text-black-900">
                 {info?.getValue?.()}
               </Text>
-              <Text as="p" className="tracking-[0.14px] text-black-900">
+              <Text as="p" className="tracking-[0.14px] !text-black-900">
                 On Going
               </Text>
             </div>
@@ -145,7 +145,7 @@ export default function MyProfileHistoryPage() {
               <Text as="p" className="tracking-[0.14px] !text-black-900">
                 1h 19m
               </Text>
-              <Text as="p" className="mb-1 tracking-[0.14px] text-black-900">
+              <Text as="p" className="mb-1 tracking-[0.14px] !text-black-900">
                 18h 18m 25s
               </Text>
             </div>
