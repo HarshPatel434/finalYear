@@ -109,7 +109,6 @@ export default function ActiveBidPage() {
                     >
                       Price Range
                     </Button>
-                  </div>
                 </div>
                 <Button
                   color="gray_100"
@@ -128,6 +127,7 @@ export default function ActiveBidPage() {
                     <ActiveBidProductcard {...d} key={"productlists" + index} />
                   ))}
                 </Suspense>
+                </div>
               </div>
             </div>
           </div>

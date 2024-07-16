@@ -248,10 +248,10 @@ export default function DashboardPage() {
                                 </div>
                             </div>
                         </header>
-                        <div className="flex w-[100%] pl-3 items-center  gap-[14px] ">
-                            <div className="flex flex-1 flex-col gap-[50px] ">
-                                <div className="h-[200px] rounded-[15px] bg-[url(./public/images/img_group_33913.png)] bg-cover  bg-no-repeat ">
-                                    <div className="flex justify-center rounded-[15px]  p-[30px] bg-color ">
+                        <div className="flex w-[97%] pl-3 items-center  gap-[34px] md:flex-col ">
+                            <div className="flex flex-1 flex-col gap-[38px] md:self-stretch ">
+                                <div className="h-[250px] rounded-[15px] bg-[url(./public/images/img_group_33913.png)] bg-cover  bg-no-repeat ">
+                                    <div className="flex justify-center rounded-[15px]  p-[30px] sm:p-5 ">
                                         <div className="mb-[19px] mt-[23px] flex-col items-start gap-[33px]">
                                             <div className="flex flex-col items-start gap-3.5">
                                                 <Heading size="2xl" as="h1" className="tracking-[0.32px] text-white-A700">
@@ -292,7 +292,7 @@ export default function DashboardPage() {
                                             </Text>
                                         </a>
                                     </div>
-                                    <div className="flex gap-[19px] ">
+                                    <div className="flex gap-[19px]  md:flex-col">
                                         <Suspense fallback={<div>Loading feed...</div>}>
                                             {data.map((d, index) => (
                                                 <DashboardProductCard {...d} key={`productlist-${index}`} />
@@ -306,7 +306,7 @@ export default function DashboardPage() {
                                             Top Collection
                                         </Heading>
                                         <a href="#">
-                                            <Text as="p" className=" ">
+                                            <Text as="p" className="tracking-[0.14px] !text-gray-900_01">
                                                 View All
                                             </Text>
                                         </a>
@@ -321,14 +321,14 @@ export default function DashboardPage() {
                                     />
                                 </div>
                             </div>
-                            <div className="flex w-[31%] flex-col gap-[42px] border-[0.5px] border-solid border-gray-100 bg-white-A700 p-[26px] ">
+                            <div className="flex w-[31%] flex-col gap-[42px] border-[0.5px] border-solid border-gray-100 bg-white-A700 p-[26px] md:w-full sm:p-5">
                                 <div className="mt-3.5 flex flex-col gap-5">
                                     <div className="flex flex-wrap items-center justify-between gap-5">
                                         <Heading size="md" as="h6">
                                             Featured Creators
                                         </Heading>
                                         <a href="#" className="self-start">
-                                            <Text as="p" className="">
+                                            <Text as="p" className="tracking-[0.14px] !text-gray-900_01">
                                                 See All
                                             </Text>
                                         </a>
@@ -354,7 +354,7 @@ export default function DashboardPage() {
                                                     <Heading size="xs" as="p" className="tracking-[0.14px]">
                                                         Murakami Flowers
                                                     </Heading>
-                                                    <img src="images/img_checkmark_blue_a200.svg" alt="checkmark" className="h-[18px] w-[38px]" />
+                                                    <img src="images/img_checkmark_blue_a200.svg" alt="checkmark" className="h-[18px] w-[18px]" />
                                                 </div>
                                                 <Text size="s" as="p" className="tracking-[0.12px]">
                                                     @mftmkkus
@@ -373,7 +373,7 @@ export default function DashboardPage() {
                                         <Text
                                             size="s"
                                             as="p"
-                                            className="mb-2 w-[94%] font-normal leading-[188%] tracking-[0.12px] "
+                                            className="mb-2 w-[94%] font-normal leading-[180%] tracking-[0.12px] "
                                         >
                                             Murakami Flowers is a work in which artist Takashi Murakami's representative artwork...
                                         </Text>
@@ -391,7 +391,8 @@ export default function DashboardPage() {
                                         </a>
                                     </div>
                                     <div className="flex flex-col gap-[19px]">
-                                        <div className="flex flex-1 flex-col pb-[21px] ">
+                                        <div className="flex flex-1 flex-col pb-[21px] sm:pb-5
+                                        +.36-">
                                             <div className="flex items-center justify-between gap-5">
                                                 <div className="flex w-[61%] items-center justify-center gap-3.5">
                                                     <img
